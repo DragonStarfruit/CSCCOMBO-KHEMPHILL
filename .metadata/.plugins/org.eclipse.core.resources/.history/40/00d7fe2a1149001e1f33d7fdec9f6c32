@@ -1,0 +1,16 @@
+		/*************************************										
+		 * multi-line comment (more Profetional)									*
+		 * this is a hello world program. It writes hello world in the console		*
+		 * written by Kai Hemphill on 9/1/2023										*
+		 *************************************/	
+public class HelloWorld {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// Hello World comment 
+		System.out.println("Hello World!");						
+		 
+
+	}
+
+}
