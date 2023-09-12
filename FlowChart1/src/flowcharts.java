@@ -1,5 +1,5 @@
 /************************
- * 		Flowcharts		*
+ * 		Flowchart 2		*
  ************************/
 
 
@@ -14,6 +14,7 @@ public class flowcharts {
 		double activityFee = 250.00; 
 		int creds; 
 		double total; 
+		char ans; 
 		total = 0;
 		Scanner input = new Scanner(System.in);
 		
@@ -23,8 +24,13 @@ public class flowcharts {
 		if ( creds > 12) 
 			total = activityFee + ((creds*creditHour) + parkingFee);
 			else 
-			total = (creds*creditHour) + parkingFee;  
-		 
+			System.out.println("Do you want the activity fee? (Y/N)");
+			ans = input.next().charAt(0);
+				if (ans == 'Y' );
+				total = activityFee + ((creds*creditHour) + parkingFee);
+					else   
+					total = (creds*creditHour) + parkingFee; 
+					
 		System.out.println("Your total is: " + total);
 		
 		
