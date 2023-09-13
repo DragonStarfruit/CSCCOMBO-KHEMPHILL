@@ -66,7 +66,7 @@ public class whileLoop {
 //		System.out.println("Blast Off!");
 		
 /****************************************
- * 			Counting					*
+ * 			Counting to 100				*
  ***************************************/
 		int count = 0;
 		
@@ -74,11 +74,6 @@ public class whileLoop {
 			System.out.println(count);
 			count = count + 2;
 		}
-		
-		
-		
-		
-		
 		
 		
 		
