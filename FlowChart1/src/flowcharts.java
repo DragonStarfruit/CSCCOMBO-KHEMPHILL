@@ -26,11 +26,11 @@ public class flowcharts {
 			else 
 			System.out.println("Do you want the activity fee? (Y/N)");
 			ans = input.next().charAt(0);
-				if (ans == 'Y' );
+				if (ans == 'Y' )
 				total = activityFee + ((creds*creditHour) + parkingFee);
-					else   
+					else  { 
 					total = (creds*creditHour) + parkingFee; 
-					
+					}
 		System.out.println("Your total is: " + total);
 		
 		

@@ -4,7 +4,7 @@ public class strigFun {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String answer = 
+		String answer = "y";
 		
 		String day = "Tuesday"; 
 		
@@ -23,7 +23,7 @@ public class strigFun {
 		
 		Scanner input = new Scanner(System.in);  
 		
-		System.out.println("Do you know how to get input?);
+		System.out.println("Do you know how to get input?");
 		answer = input.nextLine(); 
 		
 		System.out.println(answer);
