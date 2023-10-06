@@ -14,20 +14,20 @@ public class arraysExersice5 {
 			total = total + nums[i];
 		}
 		for (int i = 0; i < nums.length; i++) {
-			for ( int j = 0; j < nums[j]; j++) {
+			for ( int j = 0; j < nums[j] -1 ; j++) {
 				if (nums[j]>nums[i]) {
 					big = nums[j];
 				}
 			}
 		}
 		for (int i = 0; i < nums.length; i++) {
-			for ( int j = 0; j < nums[j]; j++) {
+			for ( int j = 0; j < nums[j]-1; j++) {
 				if (nums[j]<nums[i]) {
 					small = nums[j];
 				}
 			}
 		}
-		total = (total/nums.length) - big - small;
+		total = ((total - big - small)/nums.length);
 		return total;
 	}
 }
