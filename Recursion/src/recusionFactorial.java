@@ -25,8 +25,9 @@ public class recusionFactorial {
 		else {
 			System.out.println(n);
 			counting(n-1); 
+			//System.out.println(n);
 		}
-		//System.out.println(n); 
+		
 	}
 	
 }
