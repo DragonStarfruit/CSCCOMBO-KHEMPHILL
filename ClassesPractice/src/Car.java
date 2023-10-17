@@ -39,4 +39,21 @@ public class Car {
 	public double getAmtOfGas() {
 		return amtOfGas; 
 	}
+	
+	//Mutators or Setters 
+	public void setColor(String color) {
+		this.color = color;
+	}
+	
+	public void setAmtofGas(double amtOfGas) {
+		this.amtOfGas = amtOfGas; 
+	}
+	
+	// to string
+	public String toString() {
+		String str = "The Cars Color: " + this.color 
+						+ " and the mileage is:" + this.mileage 
+						+ " and the gas amount is: " + this.amtOfGas; 
+		return str; 
+	}
 }
