@@ -14,6 +14,8 @@ public class Driver {
 		System.out.println(yourCar.getAmtOfGas());
 		
 		System.out.println(yourCar);
+		yourCar.drive(49);
+		System.out.println(yourCar);
 	}
 
 }

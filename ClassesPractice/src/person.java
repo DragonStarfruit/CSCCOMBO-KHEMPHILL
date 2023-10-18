@@ -3,9 +3,7 @@ public class person {
 	
 	private String name; 
 	private int age; 
-	private int hightIn; 
-//	private int hightFt; 
-//	private int inches; 
+	private int hightIn;  
 	
 	// Constructors
 	public person(String name, int age, int hightIn) {
@@ -26,8 +24,6 @@ public class person {
 	public int getHightIn() {
 		return hightIn; 
 	}
-
-
 	
 	// Setters
 	public void setName(String name) {
@@ -43,6 +39,7 @@ public class person {
 	}
 	
 	//to String Method
+	@Override
 	public String toString() {
 		String str = "Name: " + this.name 
 				+ ", Age: " + this.age 
