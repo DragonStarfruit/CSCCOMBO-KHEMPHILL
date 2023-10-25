@@ -51,6 +51,20 @@ public class Character {
 		this.weapon = weapon; 
 	}
 	
+	// Methods 
+	public double doDamage() {
+		double dmg = speed * strength * weapon.getDamage();
+		return dmg; 
+	}
+	
+	public void receiveDamage(double damage) {
+		this.health-=damage; 
+	}
+	
+	public boolean isDead() {
+		return health<=0;
+	}
+	
 	// to String 
 	@Override
 	public String toString() {
@@ -60,6 +74,7 @@ public class Character {
 				+ "\nhealth:" + health
 				+ "\nweapon=" + weapon;
 	}
+	
 
 
 }
