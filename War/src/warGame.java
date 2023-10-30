@@ -7,6 +7,16 @@ public class warGame {
 		
 		Deck deck = new Deck();
 		System.out.println(deck);
+		
+		deck.shuffle();
+		System.out.println();
+		System.out.println();
+		System.out.println(deck);
+		
+		Deck.shuffle(deck);
+		System.out.println();
+		System.out.println();
+		System.out.println(deck);
 	}
 
 }
