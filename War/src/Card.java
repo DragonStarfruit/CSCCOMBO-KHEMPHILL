@@ -34,6 +34,22 @@ public class Card {
 	@Override
 	public String toString() {
 		return RANKS[rank] + " of " + SUITS[suit];
-	} 
+	}
+	
+	public int compareTo(Card otherCard) {
+		if (suit > otherCard.suit) {
+			return 1;
+		}
+		else if (suit < otherCard.suit) {
+			return -1;
+		}
+		if (rank > otherCard.rank) {
+			return 1;
+		}
+		else if (rank < otherCard.rank) {
+			return -1;
+		}
+		return 0; 
+		}
 
 }
