@@ -20,6 +20,7 @@ public class Deck {
 //		return "Current order of deck:" + Arrays.toString(cards);
 //	}
 	
+	//shuffle
 	public void shuffle() {
 		for (int i = 0; i < cards.length; i++) {
 			int index = rand.nextInt(cards.length);
@@ -27,7 +28,7 @@ public class Deck {
 		}
 	}
 	
-	
+	// get/set cards
 	public Card[] getCards() {
 		return cards;
 	}
@@ -35,7 +36,8 @@ public class Deck {
 	public void setCards(Card[] cards) {
 		this.cards = cards;
 	}
-
+	
+	//Shuffle
 	public static void shuffle(Deck deck) {
 		Card[] cards = deck.getCards();
 		for (int i = 0; i < cards.length; i++) {
@@ -46,6 +48,7 @@ public class Deck {
 		}
 	}
 	
+	//Swap
 	private void swap(int a, int b) {
 		Card temp = cards[a];
 		cards[a] = cards[b];
@@ -58,6 +61,7 @@ public class Deck {
 		cards[b] = temp; 
 	}
 	
+	//Bubble Sort
 	public void bubbleSort() {
 		for (int i = 0; i < cards.length-1; i++) {
 			for (int j = 1; j < cards.length-i; j++) {
@@ -79,6 +83,7 @@ public class Deck {
 		}
 	}
 	
+	//to String
 	@Override
 	public String toString() {
 		StringBuilder retStr = new StringBuilder();

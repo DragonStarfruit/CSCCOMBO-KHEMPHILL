@@ -36,6 +36,7 @@ public class Card {
 		return RANKS[rank] + " of " + SUITS[suit];
 	}
 	
+	//comparTo
 	public int compareTo(Card otherCard) {
 		if (suit > otherCard.suit) {
 			return 1;
