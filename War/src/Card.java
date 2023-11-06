@@ -38,12 +38,12 @@ public class Card {
 	
 	//comparTo
 	public int compareTo(Card otherCard) {
-		if (suit > otherCard.suit) {
-			return 1;
-		}
-		else if (suit < otherCard.suit) {
-			return -1;
-		}
+//		if (suit > otherCard.suit) {
+//			return 1;
+//		}
+//		else if (suit < otherCard.suit) {
+//			return -1;
+//		}
 		if (rank > otherCard.rank) {
 			return 1;
 		}
