@@ -1,22 +1,34 @@
+import java.util.ArrayList;
+import java.util.List;
 
 public class Farm {
 
 	public static void main(String[] args) {
 		
-		Cat felix = new Cat(1.5,1.0,"Orange");
-		Animal muppet = new Animal(1,3);
-		Animal fido = new Dog (3,2,true);
-		Horse esroh = new Horse (5,4,10);
+		List<Animal> anim = new ArrayList<>();
 		
-		System.out.println(felix);
-		System.out.println(muppet);
-		System.out.println(fido);
-		System.out.println(esroh);
+		Animal[] animals = new Animal[5];
 		
-		System.out.println(felix.makeNoise());
-		System.out.println(fido.makeNoise());
-		System.out.println(esroh.makeNoise());
+		animals[0] = new Cat(1,2,"grey");
+		anim.add(new Cat(1,2,"grey"));
+		animals[1] = new Cat(2,1,"orange");
+		anim.add(new Cat(2,1,"orange"));
+		animals[2] = new Horse(6,12,37);
+		anim.add( new Horse(6,12,37));
+		animals[3] = new Dog(1,2,false);
+		anim.add(new Dog(1,2,false));
+		animals[4] = new Horse(10,12,41);
+		anim.add(new Horse(10,12,41));
+			
 		
+		for (int i = 0; i<animals.length; i++) {
+			System.out.println(animals[i].getHeigth());
+		}
+		
+		for (Animal ani : animals) {
+			System.out.println(ani.makeNoise());
+		}
+	
 	}
 
 }
