@@ -7,9 +7,8 @@ public class Course {
 	private int credits;
 	
 	//constructors 
-	public Course(String courseNumber) {
-		super();
-		this.courseNumber = courseNumber;
+	public Course() {
+
 	}
 
 	public Course(String courseNumber, int numsStudents, int maxSudents, int credits) {

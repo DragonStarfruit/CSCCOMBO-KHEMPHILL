@@ -1,19 +1,38 @@
+import java.util.ArrayList;
+import java.util.List;
 
 public class CSclasses {
 
 	public static void main(String[] args) {
 		
-		Course courseList1 = new Course("CSC1077");
-		Course courseList2 = new Course("CSC1078");
-		Course courseList3 = new Course("CSC1079");
-		Course courseList4 = new Course("CSC1060", 10, 20, 5);
-		Course courseList5 = new Course("CSC1061", 12, 25, 5);
-		Course courseList6 = new Course("CSC1062", 9, 20, 5);
-		Course[] courseList = {courseList1,courseList2,courseList3,courseList4,courseList5,courseList6};
+		List<Course> courseList = new ArrayList<>(); 
 		
-		for (int i = 0; i<courseList.length; i++) {
-			System.out.println(courseList[i]);
+		Course combo = new InPersonCourse("CSC1060", 20, 30, 5, "bp100");
+		courseList.add(combo);
+		Course math = new FullRemoteCourse("Calc100", 15, 25, 5, "NameAndSomeNumbersNumbers@gmail.com");
+		courseList.add(math);
+		Course moreCoding = new RealTimeRemoteCourse("CSC100", 25, 35, 5, "ZoomCode"); 
+		courseList.add(moreCoding);
+		
+//		System.out.println(courseInfo(moreCoding));
+//		System.out.println(printCourse(combo));
+		
+		for (Course i : courseList) {
+			System.out.println();
 		}
+
+	}
+	
+	public static String printCourse(Course course) {
+		return course.toString(); 
+	}
+	
+	public static String courseInfo(Course course) {
+		return "Course number: " + course.getCourseNumber()
+		+ "\nNumber of Students: " + course.getNumsStudents()
+		+ "\nMax students:" + course.getMaxSudents() 
+		+ "\nCredits: " + course.getCredits() 
+		+ "\n" + printCourse(course);
 	}
 
 }
