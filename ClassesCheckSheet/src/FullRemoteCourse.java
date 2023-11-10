@@ -13,9 +13,22 @@ public class FullRemoteCourse extends OnlineCourse{
 
 	}
 
+	
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
 	@Override
 	public String toString() {
-		return "Email: " + email;
+		return "Course courseNumber:" + getCourseNumber() 
+		+ "\nNumsStudents:" + getNumsStudents() 
+		+ "\nMaxStudents:" + getMaxSudents()
+		+ "\nCredits:" + getCredits() 
+		+ "\nEmail: " + email;
 	}
 
 	

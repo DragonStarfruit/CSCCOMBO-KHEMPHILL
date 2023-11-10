@@ -12,9 +12,23 @@ public class RealTimeRemoteCourse extends OnlineCourse{
 		this.zoom = zoom; 
 	}
 
+	
+	
+	public String getZoom() {
+		return zoom;
+	}
+
+	public void setZoom(String zoom) {
+		this.zoom = zoom;
+	}
+
 	@Override
-	public String toString() {
-		return  "Zoom: " + zoom ;
+	public String toString() { 
+		return  "Course courseNumber:" + getCourseNumber() 
+				+ "\nNumsStudents:" + getNumsStudents() 
+				+ "\nMaxStudents:" + getMaxSudents()
+				+ "\nCredits:" + getCredits() 
+				+ "\nZoom: " + zoom ;
 	}
 	
 	

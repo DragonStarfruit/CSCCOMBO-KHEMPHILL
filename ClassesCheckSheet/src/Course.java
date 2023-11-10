@@ -56,9 +56,9 @@ public class Course {
 	@Override
 	public String toString() {
 		return "Course courseNumber:" + courseNumber 
-				+ "\n numsStudents:" + numsStudents 
-				+ "\n maxSudents:" + maxSudents
-				+ "\n credits:" + credits;
+				+ "\nNumsStudents:" + numsStudents 
+				+ "\nMaxStudents:" + maxSudents
+				+ "\nCredits:" + credits;
 	} 
 
 }

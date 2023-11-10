@@ -11,10 +11,24 @@ public class InPersonCourse extends Course{
 		super(courseNumber, numsStudents, maxSudents, credits);
 		this.roomNumber = roomNumber; 
 	}
+	
+	
+
+	public String getRoomNumber() {
+		return roomNumber;
+	}
+
+	public void setRoomNumber(String roomNumber) {
+		this.roomNumber = roomNumber;
+	}
 
 	@Override
 	public String toString() {
-		return "Room Number: " + roomNumber;
+		return "Course courseNumber:" + getCourseNumber() 
+		+ "\nNumsStudents:" + getNumsStudents() 
+		+ "\nMaxStudents:" + getMaxSudents()
+		+ "\nCredits:" + getCredits() 
+		+ "\nRoom Number: " + roomNumber;
 	}	
 	
 	
