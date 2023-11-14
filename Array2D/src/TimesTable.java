@@ -4,27 +4,35 @@ public class TimesTable {
 	private int[][] timesTable;;
 
 	//constructors
-	public TimesTable(int[][] timesTable) {
-		super();
-		this.timesTable = timesTable;
-		timesTable = new int[10][10];
-		int count = 0; 
+	public TimesTable() {
+		timesTable = new int[10][10]; 
 		for (int rows = 0; rows <timesTable.length; rows++) {
 			for (int column = 0; column<timesTable[rows].length; column++) {
-				timesTable[rows][column] = count;
-				count++;
+				timesTable[rows][column] = (rows + 1)*(column + 1);
 			}
 		}
 	}
 	
 	//methods
-	public int createTimesTable(int rows, int cols) { 
-		for(int row = 0; row<rows; row++) {
-			for(int col = 0; col<cols; col++) {
-				
+	public static int[][] createTimesTable(int rows, int cols) { 
+		int[][] timesTable = new int[rows][cols];
+		for ( rows = 0; rows <timesTable.length; rows++) {
+			for (cols = 0; cols<timesTable[rows].length; cols++) {
+				timesTable[rows][cols] = (rows + 1)*(cols + 1);
 			}
 		}
-		return 0;
+		return timesTable;
+	}
+	
+	public static String printTimesTable(TimesTable[][] timesTable) {
+		String table = "";
+		for (int rows = 0; rows <timesTable.length; rows++) {
+			for (int column = 0; column<timesTable[rows].length; column++) {
+				table += "" + (rows + 1)*(column + 1) + "" ;
+			}
+			table += "\n";
+		}
+		return table;
 		
 	}
 	
