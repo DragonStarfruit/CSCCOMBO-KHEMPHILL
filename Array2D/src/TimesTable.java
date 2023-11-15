@@ -24,11 +24,11 @@ public class TimesTable {
 		return timesTable;
 	}
 	
-	public static String printTimesTable(TimesTable[][] timesTable) {
+	public static String printTimesTable(int[][] table2) {
 		String table = "";
-		for (int rows = 0; rows <timesTable.length; rows++) {
-			for (int column = 0; column<timesTable[rows].length; column++) {
-				table += "" + (rows + 1)*(column + 1) + "" ;
+		for (int rows = 0; rows <table2.length; rows++) {
+			for (int column = 0; column<table2[rows].length; column++) {
+				table +=  String.format("%4d",table2[rows][column]);
 			}
 			table += "\n";
 		}
