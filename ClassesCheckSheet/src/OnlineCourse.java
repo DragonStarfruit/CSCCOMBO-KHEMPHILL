@@ -5,8 +5,8 @@ public class OnlineCourse extends Course{
 		super(); 
 	}
 	
-	public OnlineCourse(String courseNumber, int numsStudents, int maxSudents, int credits) {
-		super(courseNumber, numsStudents, maxSudents, credits);
+	public OnlineCourse(String courseNumber, int numsStudents, int maxStudents, int credits) {
+		super(courseNumber, numsStudents, maxStudents, credits);
 	}
 
 	@Override

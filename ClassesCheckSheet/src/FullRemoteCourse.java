@@ -7,8 +7,8 @@ public class FullRemoteCourse extends OnlineCourse{
 		
 	}
 	
-	public FullRemoteCourse(String courseNumber, int numsStudents, int maxSudents, int credits, String email) {
-		super(courseNumber, numsStudents, maxSudents, credits);
+	public FullRemoteCourse(String courseNumber, int numsStudents, int maxStudents, int credits, String email) {
+		super(courseNumber, numsStudents, maxStudents, credits);
 		this.email = email; 
 
 	}
@@ -21,12 +21,17 @@ public class FullRemoteCourse extends OnlineCourse{
 	public void setEmail(String email) {
 		this.email = email;
 	}
+	
+	// dbString 
+		public String dbString() {
+			return getCourseNumber() + "," + getNumsStudents() + "," + getMaxStudents() + "," + getCredits() + "," + email;
+		} 
 
 	@Override
 	public String toString() {
 		return "Course courseNumber:" + getCourseNumber() 
 		+ "\nNumsStudents:" + getNumsStudents() 
-		+ "\nMaxStudents:" + getMaxSudents()
+		+ "\nMaxStudents:" + getMaxStudents()
 		+ "\nCredits:" + getCredits() 
 		+ "\nEmail: " + email;
 	}

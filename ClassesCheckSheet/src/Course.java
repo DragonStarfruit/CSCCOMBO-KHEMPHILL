@@ -3,7 +3,7 @@ public class Course {
 	
 	private String courseNumber;
 	private int numsStudents;
-	private int maxSudents;
+	private int maxStudents;
 	private int credits;
 	
 	//constructors 
@@ -11,11 +11,11 @@ public class Course {
 
 	}
 
-	public Course(String courseNumber, int numsStudents, int maxSudents, int credits) {
+	public Course(String courseNumber, int numsStudents, int maxStudents, int credits) {
 		super();
 		this.courseNumber = courseNumber;
 		this.numsStudents = numsStudents;
-		this.maxSudents = maxSudents;
+		this.maxStudents = maxStudents;
 		this.credits = credits;
 	}
 
@@ -36,12 +36,12 @@ public class Course {
 		this.numsStudents = numsStudents;
 	}
 
-	public int getMaxSudents() {
-		return maxSudents;
+	public int getMaxStudents() {
+		return maxStudents;
 	}
 
-	public void setMaxSudents(int maxSudents) {
-		this.maxSudents = maxSudents;
+	public void setMaxStudents(int maxStudents) {
+		this.maxStudents = maxStudents;
 	}
 
 	public int getCredits() {
@@ -52,12 +52,17 @@ public class Course {
 		this.credits = credits;
 	}
 	
+	// dbString 
+	public String dbString() {
+		return courseNumber + "," + numsStudents + "," + maxStudents + "," + credits;
+	}
+	
 	//to String 
 	@Override
 	public String toString() {
 		return "Course courseNumber:" + courseNumber 
 				+ "\nNumsStudents:" + numsStudents 
-				+ "\nMaxStudents:" + maxSudents
+				+ "\nMaxStudents:" + maxStudents
 				+ "\nCredits:" + credits;
 	} 
 

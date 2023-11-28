@@ -1,10 +1,11 @@
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
 public class CSclasses {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws FileNotFoundException {
 		Scanner input = new Scanner(System.in);
 		List<Course> courseList = new ArrayList<>();
 		Course course;
@@ -44,6 +45,12 @@ public class CSclasses {
 		for (int i = 0; i < courseList.size(); i++) {
 			printCourse(courseList.get(i));
 		}
+		
+		FileWriter fileWriter = new FileWriter();
+		for (Course course1: courseList) {
+			fileWriter.writeToFile(course1);
+		}
+		fileWriter.close();
 
 	}
 
@@ -55,21 +62,21 @@ public class CSclasses {
 		if (course instanceof InPersonCourse) {
 			System.out.println("Course Number: " + course.getCourseNumber());
 			System.out.println("Number of Students: " + course.getNumsStudents());
-			System.out.println("Max Students" + course.getMaxSudents());
+			System.out.println("Max Students" + course.getMaxStudents());
 			System.out.println("Credits: " + course.getCredits());
 			System.out.println("Room Number: " + ((InPersonCourse) course).getRoomNumber());
 		}
 		if (course instanceof FullRemoteCourse) {
 			System.out.println("Course Number: " + course.getCourseNumber());
 			System.out.println("Number of Students: " + course.getNumsStudents());
-			System.out.println("Max Students" + course.getMaxSudents());
+			System.out.println("Max Students" + course.getMaxStudents());
 			System.out.println("Credits: " + course.getCredits());
 			System.out.println("Email: " + ((FullRemoteCourse) course).getEmail());
 		}
 		if (course instanceof RealTimeRemoteCourse) {
 			System.out.println("Course Number: " + course.getCourseNumber());
 			System.out.println("Number of Students: " + course.getNumsStudents());
-			System.out.println("Max Students" + course.getMaxSudents());
+			System.out.println("Max Students" + course.getMaxStudents());
 			System.out.println("Credits: " + course.getCredits());
 			System.out.println("Zoom: " + ((RealTimeRemoteCourse) course).getZoom());
 		}

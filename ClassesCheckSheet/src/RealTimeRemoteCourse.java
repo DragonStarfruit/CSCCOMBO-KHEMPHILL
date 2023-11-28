@@ -22,11 +22,16 @@ public class RealTimeRemoteCourse extends OnlineCourse{
 		this.zoom = zoom;
 	}
 
+	// dbString 
+	public String dbString() {
+		return getCourseNumber() + "," + getNumsStudents() + "," + getMaxStudents() + "," + getCredits() + "," + zoom;
+	} 
+		
 	@Override
 	public String toString() { 
 		return  "Course courseNumber:" + getCourseNumber() 
 				+ "\nNumsStudents:" + getNumsStudents() 
-				+ "\nMaxStudents:" + getMaxSudents()
+				+ "\nMaxStudents:" + getMaxStudents()
 				+ "\nCredits:" + getCredits() 
 				+ "\nZoom: " + zoom ;
 	}

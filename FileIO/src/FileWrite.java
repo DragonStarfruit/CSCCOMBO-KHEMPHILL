@@ -3,21 +3,21 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-public class FileHandling {
+public class FileWrite {
 
 	public static void main(String[] args) throws IOException {
 		File myFile = createFile("test.txt");
 		File myFile2 = createFile("test2.txt");
 		
-		if (!myFile.exists()) {
-			if (myFile.createNewFile()) {
-			System.out.println("File created successfully");	
-			}
-			
-		}
-		else {
-			System.out.println("File already exists in directory");
-		}
+//		if (!myFile.exists()) {
+//			if (myFile.createNewFile()) {
+//			System.out.println("File created successfully");	
+//			}
+//			
+//		}
+//		else {
+//			System.out.println("File already exists in directory");
+//		}
 		
 		PrintWriter printer = new PrintWriter(new FileOutputStream(myFile));
 		

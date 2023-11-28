@@ -22,11 +22,16 @@ public class InPersonCourse extends Course{
 		this.roomNumber = roomNumber;
 	}
 
+	// dbString 
+	public String dbString() {
+		return getCourseNumber() + "," + getNumsStudents() + "," + getMaxStudents() + "," + getCredits() + "," + roomNumber;
+	}
+	
 	@Override
 	public String toString() {
 		return "Course courseNumber:" + getCourseNumber() 
 		+ "\nNumsStudents:" + getNumsStudents() 
-		+ "\nMaxStudents:" + getMaxSudents()
+		+ "\nMaxStudents:" + getMaxStudents()
 		+ "\nCredits:" + getCredits() 
 		+ "\nRoom Number: " + roomNumber;
 	}	
