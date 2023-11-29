@@ -24,7 +24,7 @@ public class FullRemoteCourse extends OnlineCourse{
 	
 	// dbString 
 		public String dbString() {
-			return getCourseNumber() + "," + getNumsStudents() + "," + getMaxStudents() + "," + getCredits() + "," + email;
+			return "FullRemoteCourse" + "," + getCourseNumber() + "," + getNumsStudents() + "," + getMaxStudents() + "," + getCredits() + "," + email;
 		} 
 
 	@Override

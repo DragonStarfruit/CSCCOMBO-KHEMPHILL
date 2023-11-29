@@ -24,7 +24,7 @@ public class RealTimeRemoteCourse extends OnlineCourse{
 
 	// dbString 
 	public String dbString() {
-		return getCourseNumber() + "," + getNumsStudents() + "," + getMaxStudents() + "," + getCredits() + "," + zoom;
+		return "RealTimeRemoteCourse" + "," + getCourseNumber() + "," + getNumsStudents() + "," + getMaxStudents() + "," + getCredits() + "," + zoom;
 	} 
 		
 	@Override

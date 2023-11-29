@@ -24,7 +24,7 @@ public class InPersonCourse extends Course{
 
 	// dbString 
 	public String dbString() {
-		return getCourseNumber() + "," + getNumsStudents() + "," + getMaxStudents() + "," + getCredits() + "," + roomNumber;
+		return "InPersonCourse" + "," + getCourseNumber() + "," + getNumsStudents() + "," + getMaxStudents() + "," + getCredits() + "," + roomNumber;
 	}
 	
 	@Override

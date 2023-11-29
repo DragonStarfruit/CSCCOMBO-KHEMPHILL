@@ -54,7 +54,7 @@ public class Course {
 	
 	// dbString 
 	public String dbString() {
-		return courseNumber + "," + numsStudents + "," + maxStudents + "," + credits;
+		return "Course" + courseNumber + "," + numsStudents + "," + maxStudents + "," + credits;
 	}
 	
 	//to String 
