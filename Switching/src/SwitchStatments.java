@@ -35,8 +35,8 @@ public class SwitchStatments {
 //			System.out.println("after " + num);
 //			num++; 
 //		}
-		
-		String food = "carrot";
+		int nums2 = 6;
+		String food = nums2 > 5 ? (nums2 < 8 ? "banana" : "carrot") : "apple";
 		
 		switch(food){
 		case "apple":
@@ -53,6 +53,5 @@ public class SwitchStatments {
 			System.out.println("not a fruit or a veggie");
 		}
 		
-			
 	}
 }
